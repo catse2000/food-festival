@@ -7,9 +7,6 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-<<<<<<< HEAD
-/******/ 	"use strict";
-=======
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./assets/js/domMethods.js":
@@ -127,6 +124,5 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\nconst createEl = __webpack_require__(/*! ./domMethods */ \"./assets/js/domMethods.js\");\n\n$(document).ready( function() {\n\n    const purchaseBtn = document.getElementById(\"purchaseBtn\");\n    const purchaseEmail = document.getElementById(\"purchaseEmail\");\n    const modalEl = document.querySelector(\".modal-content\");\n    const modalBodyEl = document.querySelector(\".modal-body\");\n    const modalFooterEl = document.querySelector(\".modal-footer\");\n\n\n    function purchaseTicket () {\n\n      modalEl.removeChild(modalBodyEl)\n      modalEl.removeChild(modalFooterEl)\n\n      modalEl.append(createEl(\"div\", {class: \"modal-body\"},\n        createEl(\"h5\", {class: \"modal-title\"}, \n        `Thanks for requesting a ticket purchase! We will send an email to ${purchaseEmail.value} to complete the order form!`\n        ),\n      ))\n      \n    }\n    purchaseBtn.addEventListener(\"click\", purchaseTicket);\n});\n\n//# sourceURL=webpack://food-festival/./assets/js/tickets.js?");
 })();
 
->>>>>>> feature/lazy-load
 /******/ })()
 ;

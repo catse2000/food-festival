@@ -7,9 +7,6 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-<<<<<<< HEAD
-/******/ 	"use strict";
-=======
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./assets/js/domMethods.js":
@@ -137,6 +134,5 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\nconst createEl = __webpack_require__(/*! ./domMethods */ \"./assets/js/domMethods.js\");\nconst createLoremIpsum = __webpack_require__(/*! ./helpers */ \"./assets/js/helpers.js\");\n\n$(document).ready( function() {\n    const currentEvent = JSON.parse(localStorage.getItem(\"currentEvent\")) || {\n        title: \"Title Placeholder\",\n        subtitle: \"\",\n        description: \"\"\n    };\n\n    const pageEl = document.querySelector(\"#page\");\n    \n    const containerEl = createEl(\"div\", {class: \"container\"},\n      createEl(\"div\", {class: \"card mb-3\"}, \n        createEl(\"img\", {class: \"card-img-top\", style: \"width: 5px\", src: currentEvent.image || \"https://via.placeholder.com/350x150\"}),\n        createEl(\"div\", {class: \"card-body\"}, \n          createEl(\"h1\", {class: \"card-title\"}, currentEvent.title || \"\"),\n          createEl(\"h2\", {class: \"text-muted\"}, currentEvent.subtitle || \"\"),\n          createEl(\"p\", {class: \"card-text mt-3\"}, currentEvent.description || createLoremIpsum(100)),\n          createEl(\"a\", {class: \"btn btn-primary\", href: \"tickets.html\"}, \"Buy Tickets\")\n        )\n      ),\n      \n    )\n    pageEl.appendChild(containerEl)\n});\n\n//# sourceURL=webpack://food-festival/./assets/js/events.js?");
 })();
 
->>>>>>> feature/lazy-load
 /******/ })()
 ;
